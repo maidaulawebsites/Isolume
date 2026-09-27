@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <meta name="theme-color" content="#03050a" />
+
+  <!-- Search engine description -->
+  <meta
+    name="description"
+    content="Isolume — The Universe, Within Reach. Explore space, experiment with celestial objects, and discover what happens in a physics-driven 3D universe."
+  />
+
+  <meta
+    name="keywords"
+    content="Isolume, universe explorer, space simulator, astronomy simulator, 3D universe, space exploration, physics sandbox, astronomy"
+  />
+
+  <meta name="author" content="Maidaula Studios" />
+
+  <!-- Search engines should be allowed to index the public website -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Replace with the real domain when we have it -->
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:title"
+    content="Isolume — The Universe, Within Reach"
+  />
+
+  <meta
+    property="og:description"
+    content="Explore and experiment with a physics-driven 3D universe."
+  />
+
+  <meta
+    property="og:url"
+    content="https://YOUR-DOMAIN.com/"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Isolume"
+  />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Isolume — The Universe, Within Reach"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Explore and experiment with a physics-driven 3D universe."
+  />
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./public/favicon.svg" />
+
+  <title>Isolume — The Universe, Within Reach</title>
+
+  <!-- Software application structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Isolume",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, Android, iOS",
+    "description": "Isolume is an interactive 3D universe explorer and physics sandbox designed to let users explore celestial objects and experiment with simulated physical interactions.",
+    "creator": {
+      "@type": "Organization",
+      "name": "Maidaula Studios"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="loading-screen">
+      <div class="loading-logo">ISOLUME</div>
+      <div class="loading-tagline">THE UNIVERSE, WITHIN REACH.</div>
+      <div class="loading-line"></div>
+    </div>
+
+    <main id="universe-container"></main>
+
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-name">ISOLUME</div>
+        <div class="brand-tagline">
+          THE UNIVERSE, WITHIN REACH
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button id="search-button" aria-label="Search">
+          Search
+        </button>
+
+        <button id="settings-button" aria-label="Settings">
+          Settings
+        </button>
+      </div>
+    </header>
+
+    <aside id="side-panel" class="side-panel">
+
+      <button
+        id="panel-toggle"
+        class="panel-toggle"
+        aria-label="Toggle information panel"
+      >
+        ☰
+      </button>
+
+      <div class="panel-content">
+
+        <div class="panel-section">
+          <span class="eyebrow">ISOLUME</span>
+          <h1>Explore the Universe</h1>
+
+          <p>
+            A physics-driven universe explorer designed to
+            bring the cosmos within reach.
+          </p>
+        </div>
+
+        <div class="panel-section">
+          <span class="eyebrow">STATUS</span>
+
+          <div class="status-row">
+            <span>Simulation</span>
+            <strong id="simulation-status">
+              Initializing
+            </strong>
+          </div>
+
+          <div class="status-row">
+            <span>Objects</span>
+            <strong id="object-count">0</strong>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
